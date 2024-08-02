@@ -434,6 +434,7 @@ namespace RunCat
                 ni.OperationalStatus == OperationalStatus.Up &&
                 !ni.Description.ToLower().Contains("vpn") &&
                 !ni.Description.ToLower().Contains("tap") &&
+                !ni.Description.ToLower().Contains("virtual") &&
                 !ni.Description.ToLower().Contains("tun"));
 
             return networkInterface?.Description;
